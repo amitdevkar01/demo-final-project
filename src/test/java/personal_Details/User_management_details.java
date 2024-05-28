@@ -13,7 +13,7 @@ import page_object_module.User_management_Admin_Page_object;
 import resources.Base_class;
 
 public class User_management_details  extends Base_class{
-//	private WebElement selectD1;
+	private WebElement selectD1;
 
 	@Test
       public void verifyfieldEditable() throws InterruptedException, IOException {
@@ -37,13 +37,21 @@ public class User_management_details  extends Base_class{
   		User_management_Admin_Page_object ump=new User_management_Admin_Page_object(driver);
   		ump.Addclick().click();;
   		Thread.sleep(2000);
-//  		ump.selectDclick().click();
+//  		ump.selectDclick();
   		
-  		
-  		ump.selectDclick();
-		
+  		ump.empclick().sendKeys("<script>alert('son')</script>  <script>alert('son')</script>");;
+  		Thread.sleep(2000);
+        ump.Nameclick().sendKeys("Shivam");  	     
+		Thread.sleep(3000);
+		ump.Pass_1click().sendKeys("Admin123");
+		Thread.sleep(2000);
+		ump.Pass_2click().sendKeys("Admin123");
+		Thread.sleep(2000);
+		ump.Saveclick().click();
+		Thread.sleep(5000);
+		ump.Cancelclick().click();;
 	    
-	  }
+	}
 		
        
       }
