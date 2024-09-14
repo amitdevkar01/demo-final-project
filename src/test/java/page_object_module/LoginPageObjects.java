@@ -16,7 +16,7 @@ public class LoginPageObjects {
 	private By username = By.name("username");
 	private By Password = By.name("password");
 	private By loginButton=By.xpath("//button[@type='submit']");
-	private By myinfo = By.xpath("(//a[@class='oxd-main-menu-item'])[1]");
+	private By myinfo = By.xpath("(//a[@class=\"oxd-main-menu-item\"])[6]");
 	
 	public  LoginPageObjects(WebDriver driver2) {
 		// TODO Auto-generated constructor stub
@@ -31,10 +31,13 @@ public class LoginPageObjects {
 		
 	}
 	public WebElement clickLogin() {
-		// TODO Auto-generated method stub
 		return driver.findElement(loginButton);
 	}
-	public WebElement adminclick() {
+//	public WebElement adminclick() {
+//		return driver.findElement(myinfo);
+		
+//	}
+	public WebElement Myinfoclick() {
 		return driver.findElement(myinfo);
 		
 	}

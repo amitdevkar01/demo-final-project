@@ -16,8 +16,8 @@ public class User_management_Admin_Page_object {
     private By pass_2 =By.xpath("(//input[@type=\"password\"])[2]");
     private By save_1= By.xpath("//button[@type=\"submit\"]");
     private By cancel_1 = By.xpath("(//button[@class=\"oxd-button oxd-button--medium oxd-button--ghost\"])[1]");
-    
-
+    private By check_1 = By.xpath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div[2]/div[3]/div/div[1]/div/div[1]/div/label/span/i");
+    private By subcheck_1 = By.xpath("//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div[2]/div[3]/div/div[2]/div[2]/div/div[1]/div/div/label/span/i");
 	
 	
 	
@@ -50,8 +50,16 @@ public class User_management_Admin_Page_object {
 		return driver.findElement(save_1);
 	}
 	public WebElement Cancelclick() {
-        return driver.findElement(cancel_1)	;	
+        return driver.findElement(cancel_1);	
 	}
+	public WebElement AllSelectclick() {
+		return driver.findElement(check_1);
+	}
+	public WebElement Select_1click() {
+		return driver.findElement(subcheck_1) ;
+		
+	}
+	
 	
       
        		

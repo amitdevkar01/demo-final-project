@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="personal_Details.User_management_details">
+      <class name="page_object_module.Data_TestProvider">
         <methods>
-          <include name="verifyfieldEditable"/>
+          <include name="TestLogin"/>
         </methods>
-      </class> <!-- personal_Details.User_management_details -->
+      </class> <!-- page_object_module.Data_TestProvider -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

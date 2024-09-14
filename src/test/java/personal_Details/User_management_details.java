@@ -30,7 +30,7 @@ public class User_management_details  extends Base_class{
   		lpo.clickLogin().click();
   		Thread.sleep(3000);
   		  		
-  		lpo.adminclick().click();
+//  		lpo.adminclick().click();
   		Thread.sleep(3000);
   		
   		//User manegementAdmin object created
@@ -50,7 +50,11 @@ public class User_management_details  extends Base_class{
 		ump.Saveclick().click();
 		Thread.sleep(5000);
 		ump.Cancelclick().click();;
-	    
+		//To check recorded details
+		Thread.sleep(3000);
+//		ump.AllSelectclick().click();
+		ump.Select_1click();
+	   
 	}
 		
        
